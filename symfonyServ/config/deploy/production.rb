@@ -21,9 +21,7 @@ role :app, %w{deploy@139.59.141.124}
 # role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
 # role :db,  %w{deploy@example.com}
 
-set :deploy_to, "var/www/#{fetch(:application)}"
-set :format, :pretty
-set :log_level, ENV['LOG_LEVEL']
+set :deploy_to, "/var/www/#{fetch(:application)}"
 
 # Configuration
 # =============
